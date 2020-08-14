@@ -30,6 +30,46 @@
     <span v-if="seen">Сейчас меня видно</span>
   </div>
 
+  <div id="app-4">
+    <ol>
+      <li v-for="key in value">{{key.li}}</li>
+    </ol>
+  </div>
+
+  <!-- Работа с пользовательским вводом -->
+  <div id="app-5">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/index.js"></script>
 </body>
