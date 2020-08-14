@@ -39,16 +39,40 @@
   <!-- Работа с пользовательским вводом -->
   <div id="app-5">
     <p>{{ message }}</p>
-    <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+    <button v-on:click="reverseMessage33">Перевернуть раба</button>
   </div>
 
+  <div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message" type="text">
+  </div>
 
+  <!-- ------------- Разбиение приложения на компоненты -->
+  <div id="app-7-a">
+    <ol>
+      <todo-item></todo-item>
+    </ol>
+  </div>
 
+  <!--
+    можно передать каждому компоненту todo-item объект
+    с информацией о задаче, который будет динамически меняться.
+    Мы также определяем для каждого компонента "key",
+    значение которого мы разберём далее в руководстве.
+    1: v-for
+    2: v-bind
+    3: v-bind
+   -->
 
-
-
-
-
+  <div id="app-7-b">
+    <ol>
+      <todo-item
+        v-for="item in shitList"
+        v-bind:todo="item"
+        v-bind:key="item.id"
+      ></todo-item>
+    </ol>
+  </div>
 
 
 

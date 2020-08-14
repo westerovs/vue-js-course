@@ -38,22 +38,54 @@ const app4 = new Vue({
 const app5 = new Vue({
     el: '#app-5',
     data: {
-      message: 'Привет, Vue.js!'
+        message: `Привет, господин, я твой верный раб vue.js!`
     },
     methods: {
-      reverseMessage: function () {
-        this.message = this.message.split('').reverse().join('')
-      }
+        reverseMessage33: function () {
+            this.message = this.message.split('').reverse().join('')
+        }
     }
-  })
+})
+
+const app6 = new Vue({
+    el: '#app-6',
+    data: {
+        message: 'Be strong'
+    }
+})
 
 
+// -----------------------------------------------------------
+// ------------- Разбиение приложения на компоненты ----------
+// -----------------------------------------------------------
 
+// Определяем новый компонент под именем todo-item
+// v1
+Vue.component('todo-item', {
+    template: '<li>My Beautiful Li</li>'
+})
 
+const app7a = new Vue({
+    el: '#app-7-a'
+})
 
+// v2
+Vue.component('todo-item', {
+    // "prop", то есть входной параметр.
+    // Имя входного параметра todo.
+    props: ['todo'],
+    template: '<li>{{ todo.text }}</li>'
+})
 
-
-
+const app7b = new Vue({
+    el: '#app-7-b',
+    data: {
+        shitList: [
+            { id: 0, text: 'У нас тут есть такие Щи'},
+            { id: 1, text: 'Xоть весь рот прополощи'},
+        ]
+    }
+})
 
 
 
