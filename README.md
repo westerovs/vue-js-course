@@ -1,2 +1,2 @@
-# trening vieJs
+# trening VUE JS
 <img src="cover.png">
