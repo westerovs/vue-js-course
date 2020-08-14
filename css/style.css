@@ -14,6 +14,11 @@ body {
   color: #ccc;
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 1rem 0 10rem;
+}
+
 li {
   list-style: none;
 }
@@ -23,10 +28,14 @@ div {
   border-bottom: 1px solid #000;
 }
 
+div:last-of-type {
+  border-bottom: 0px solid #000;
+}
+
 b {
   text-align: center;
   display: block;
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   padding: 5px;
   font-size: 18px;
   background-color: tomato;
