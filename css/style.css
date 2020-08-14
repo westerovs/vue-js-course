@@ -25,3 +25,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+div {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+}

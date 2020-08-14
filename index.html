@@ -12,7 +12,25 @@
 
 <body>
 
+  <!-- Декларативная отрисовка -->
+  <div id="app">
+    {{message}}
+  </div>
 
+  <div id="app-2">
+    <span v-bind:title="message">
+      Наведи на меня курсор на пару секунд,
+      чтобы увидеть динамически связанное значение title!
+    </span>
+  </div>
+
+
+  <!-- Условия и циклы -->
+  <div id="app-3">
+    <span v-if="seen">Сейчас меня видно</span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="js/index.js"></script>
 </body>
 
