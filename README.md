@@ -1,3 +1,2 @@
-# render-selected-on-Javascript
-trening vieJs
+# trening vieJs
 <img src="cover.png">
